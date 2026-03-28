@@ -152,7 +152,7 @@ export default function App() {
           {[
             { id: 'nhap-lieu', label: 'Nhập liệu', icon: PenSquare },
             { id: 'ma-tran', label: 'Ma trận', icon: Layout },
-            { id: 'dac-ta', label: 'Đặc tả', icon: ListChecks },
+            { id: 'dac-ta', label: 'Ma trận đặc tả', icon: ListChecks },
             { id: 'tao-de', label: 'Tạo đề', icon: FileJson }
           ].map(tab => (
             <button 
@@ -450,7 +450,7 @@ function TabDacTa({ data, countQuestions }: any) {
       className="bg-white p-10 rounded-3xl border border-slate-200 shadow-xl overflow-x-auto"
     >
       <div className="text-center mb-10">
-        <h2 className="text-2xl font-black uppercase tracking-tight">BẢNG ĐẶC TẢ CHI TIẾT ĐỀ KIỂM TRA</h2>
+        <h2 className="text-2xl font-black uppercase tracking-tight">BẢNG MA TRẬN ĐẶC TẢ CHI TIẾT ĐỀ KIỂM TRA</h2>
         <p className="text-slate-500 font-bold mt-1">HƯỚNG DẪN CHẤM VÀ ĐÁNH GIÁ NĂNG LỰC</p>
         <div className="w-20 h-1 bg-indigo-600 mx-auto mt-4 rounded-full"></div>
       </div>
@@ -656,11 +656,11 @@ function Header({ monHoc, setMonHoc, handleLogout }: any) {
         className="inline-flex items-center gap-2 px-3 py-1 bg-indigo-50 rounded-full mb-4"
       >
         <Sparkles className="w-3 h-3 text-indigo-600" />
-        <p className="text-indigo-600 font-black tracking-widest text-[9px] uppercase">Smarter Education Tools 2026</p>
+        <p className="text-indigo-600 font-black tracking-widest text-[9px] uppercase">Công cụ Giáo dục Thông minh năm 2026</p>
       </motion.div>
       
       <h1 className="text-5xl font-black text-slate-900 italic tracking-tighter mb-6">
-        Math Matrix <span className="text-indigo-600 relative">Pro
+        Ma trận Toán học. <span className="text-indigo-600 relative">Pro
           <svg className="absolute -bottom-2 left-0 w-full h-2 text-indigo-200" viewBox="0 0 100 10" preserveAspectRatio="none">
             <path d="M0 5 Q 25 0 50 5 T 100 5" fill="none" stroke="currentColor" strokeWidth="4" />
           </svg>
@@ -669,7 +669,7 @@ function Header({ monHoc, setMonHoc, handleLogout }: any) {
 
       <div className="flex justify-center items-center gap-4">
         <div className="bg-white p-1 rounded-xl border border-slate-200 shadow-sm flex gap-1">
-          {['Toán', 'Lý', 'Hóa'].map(m => (
+          {['Toán', 'Lý', 'Hóa học'].map(m => (
             <button 
               key={m} 
               onClick={() => setMonHoc(m)} 
@@ -724,7 +724,7 @@ function Login({ handleLogin, user, setUser, pass, setPass }: any) {
           <div className="w-16 h-16 bg-indigo-500 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-xl shadow-indigo-500/20 rotate-3">
             <Key className="text-white w-8 h-8" />
           </div>
-          <h1 className="text-3xl font-black text-white italic tracking-tighter">Math Matrix <span className="text-indigo-400">Pro</span></h1>
+          <h1 className="text-3xl font-black text-white italic tracking-tighter">Ma trận Toán học. <span className="text-indigo-400">Pro</span></h1>
           <p className="text-slate-400 text-xs mt-2 font-bold uppercase tracking-widest">Hệ thống quản lý đề thi 2026</p>
         </div>
 
